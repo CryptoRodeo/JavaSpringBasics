@@ -27,11 +27,6 @@ public class TodoItemsController {
         return todoItemService.findTodoItem(taskId);
     }
 
-    /**
-     * @param todoItem
-     * investigate:
-     * - find out why only 'done' is accepted and not 'isDone'
-     */
     @PostMapping("/add")
     public void addTodoItem(@RequestBody TodoItem todoItem)
     {
