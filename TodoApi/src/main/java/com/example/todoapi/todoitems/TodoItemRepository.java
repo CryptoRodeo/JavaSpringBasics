@@ -6,7 +6,9 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 /**
- * Research why this needs to be an interface
+ * The TodoItemRepository will be implemented by the Spring Data JPA during runtime
+ * based on the SimpleJpaRepository class.
+ * see: https://github.com/spring-projects/spring-data-jpa/blob/main/src/main/java/org/springframework/data/jpa/repository/support/SimpleJpaRepository.java
  */
 @Repository
 public interface TodoItemRepository extends JpaRepository<TodoItem, Long> {
